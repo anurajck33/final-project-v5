@@ -1,0 +1,90 @@
+/* ... (your existing styles) */
+
+.news-article {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+  }
+  
+  .news-article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .news-article p {
+    margin-bottom: 1rem;
+  }
+  
+  .article-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .article-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+  }
+  
+  .comments-section {
+    margin-top: 1rem;
+  }
+  
+  .comments-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .comments-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .comments-section li {
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .comments-section button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+  }
+  
+  .add-comment {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-comment input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .add-comment button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+  
+  /* ... (other styles) */
+  

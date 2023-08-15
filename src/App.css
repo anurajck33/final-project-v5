@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+.app {
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  background-color: #333;
   color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.header a {
+  color: white;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-form input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-form button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.page-item {
+  margin: 0 0.5rem;
+}
+
+.page-link {
+  color: #007bff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.news-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-list li {
+  width: 48%; /* Two columns */
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.like-comment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.like-comment-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+/* ... (other styles) */
+/* Your existing styles */
+
+/* Additional styles for NewsList */
+.news-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.news-column {
+  flex-basis: 48%; /* Two columns with some spacing */
+}
+
+/* Additional styles for NewsList and NewsArticle */
+.news-list li {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.news-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+/* Additional styles for like and comment buttons */
+.like-comment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-comment-section button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+/* Additional styles for NewsArticle */
+.news-article {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.news-article h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-article p {
+  margin-bottom: 1rem;
+}
+
+.article-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.article-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+.comments-section {
+  margin-top: 1rem;
+}
+
+.comments-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.comments-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comments-section li {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.comments-section button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+.add-comment {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.add-comment input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-comment button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
 }
