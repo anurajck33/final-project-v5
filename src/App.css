@@ -101,9 +101,6 @@
   cursor: pointer;
 }
 
-/* ... (other styles) */
-/* Your existing styles */
-
 /* Additional styles for NewsList */
 .news-columns {
   display: flex;
